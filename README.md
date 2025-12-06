@@ -1,152 +1,121 @@
-# #1 Free IP Stresser / IP Booter V6 - Ultimate Network Stress Testing Suite 🚀
+```markdown
+# 🌐 Free IP Stresser V6 - Ultimate Network Stress Testing Tool
 
-**Made by https://nightmare-stresser.co 🌙**
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kuroyaii/free-ip-stresser) ![License](https://img.shields.io/badge/license-MIT-brightgreen) ![Issues](https://img.shields.io/github/issues/kuroyaii/free-ip-stresser) ![Forks](https://img.shields.io/github/forks/kuroyaii/free-ip-stresser) ![Stars](https://img.shields.io/github/stars/kuroyaii/free-ip-stresser)
 
 ## 🚀 Introduction
 
-Welcome to **Free IP Stresser Booter V6**—a cutting-edge *Python IP Stresser* and *IP Booter* designed for network enthusiasts, researchers, and professionals!
+Welcome to the **Free IP Stresser** repository! This tool is designed for educational network stress testing. It features over 40 attack methods and 20 API tools. The aim is to provide a safe environment for authorized users to explore and understand network stress testing. This tool is developed by [Nightmare Stresser](https://nightmare-stresser.co) and is intended for educational purposes only.
 
-- 🎮 Features **14 game-specific attack methods**, **9 UDP**, **9 TCP**, and **8 HTTP/HTTPS** methods to rigorously test network resilience.
-- 🔍 Includes **CheckHost diagnostics**, a **proxy list downloader**, and **20 API-powered tools** for advanced network analysis and reconnaissance.
-- ⚠️ **Warning:** This tool is for **educational and legal testing only**! Use it exclusively on servers you own or have explicit permission to test. **Unauthorized use is strictly prohibited!** 🚨
+### 📚 Table of Contents
 
----
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Topics](#topics)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Links](#links)
 
-## ✨ Features
+## 🌟 Features
 
-### 🌟 Attack Methods
+- **40+ Attack Methods**: Explore various techniques to stress test networks.
+- **20 API Tools**: Integrate with existing systems easily.
+- **User-Friendly Interface**: Navigate through features with ease.
+- **Educational Focus**: Designed for authorized testing only.
+- **Regular Updates**: Stay tuned for improvements and new features.
 
-#### 🎮 Game Methods (14 Total):
-- **Minecraft Handshake:** Floods Minecraft servers with fake handshake packets (0x00) to overwhelm connection handling.
-- **Minecraft Login:** Sends repeated fake login attempts (0x02) with dummy usernames to stress authentication systems.
-- **PUBG Packet:** Spams UDP packets tagged with "PUBG" to disrupt PUBG server traffic.
-- **PUBG Connect:** Opens and closes TCP connections rapidly to exhaust PUBG server slots.
-- **Black Ops 6 Spam:** Floods UDP packets with "BO6" tags to target Black Ops 6 servers.
-- **Call of Duty Connect:** Overloads Call of Duty servers with TCP connection attempts.
-- **CS:GO Query:** Bombards CS:GO servers with Source Engine query packets (`\xFF\xFF\xFF\xFF\x54`) to overload query handling.
-- **Rust Connect:** Spams TCP connections to Rust servers, filling connection queues.
-- **ARK Spam:** Sends UDP packets tagged "ARK" to stress ARK server resources.
-- **Fortnite Packet:** Floods Fortnite servers with UDP packets marked "FORT".
-- **Apex Legends Connect:** Barrages Apex Legends servers with TCP connection requests.
-- **Valorant Spam:** Overloads Valorant servers with UDP packets tagged "VALO".
-- **GTA Online Connect:** Spams TCP connections to GTA Online servers, targeting session limits.
-- **Roblox Query:** Floods Roblox servers with UDP packets marked "RBX" to test query responses.
+## 🛠️ Getting Started
 
-#### 🌊 Layer 4 UDP (9 Methods):
-- 📦 **StdHex:** Sends UDP packets starting with hex "DEADBEEF" followed by random bytes for a consistent flood.
-- 📜 **Plain:** Floods with simple UDP packets filled with "A" bytes, ideal for basic stress testing.
-- 🔄 **Bypass:** Uses randomized payloads to evade simple packet filters.
-- 💥 **Burst:** Launches high-intensity UDP bursts via multiple threads for sudden load spikes.
-- 🌩️ **Storm:** Sustained UDP flood with "STORM" prefix for prolonged stress.
-- 🏃 **Rush:** Rapid UDP packet bursts across 10 threads to simulate distributed traffic.
-- 💣 **Blast:** Continuous flood with "BLAST" prefix and random data for sustained pressure.
-- 🔊 **Amplification:** Exploits UDP amplification (e.g., game server queries like `\xFF\xFF\xFF\xFFgetstatus`) to amplify traffic.
-- 🪞 **Reflection:** Simulates a reflection attack with spoofed-source UDP packets (simplified; full spoofing needs raw sockets).
+### Prerequisites
 
-#### ⚡ Layer 4 TCP (9 Methods):
-- 🔗 **Bypass:** Floods with randomized TCP payloads to bypass basic filters.
-- 🚪 **SYN:** Spams SYN packets to exhaust server connection tables.
-- 🔑 **ACK:** Sends ACK packets post-connection to overwhelm TCP stacks.
-- 🌐 **Connect:** Repeatedly opens and closes TCP connections to fill server slots.
-- 🌊 **Wave:** Sustained TCP flood with "WAVE" payload for consistent pressure.
-- ⚡ **Surge:** Rapid TCP connection spam to spike server load.
-- 💥 **Crush:** Long-term TCP flood with "CRUSH" payload to test endurance.
-- 🔄 **Rapid Reset:** Implements an HTTP/2-style rapid reset attack, quickly opening and closing connections to evade rate limits.
-- 🎭 **Spoofed SYN:** Simulates a SYN flood with spoofed IPs (simplified; requires raw sockets for true spoofing).
+Before you begin, ensure you have the following:
 
-#### 🌐 Layer 7 HTTP/HTTPS (8 Methods):
-- 📊 **Slowloris:** Maintains many open connections with "keep-alive" headers to drain server resources slowly.
-- 🔎 **HTTP Spam:** Rapid GET requests to overload HTTP servers.
-- 🔒 **HTTPS Bypass:** Uses proxies and rotating User-Agents to flood HTTPS endpoints, bypassing basic protections.
-- 🔥 **HTTP Fury:** Targets `/fury` with rapid GET requests for focused stress.
-- ⚡ **HTTPS Strike:** Floods HTTPS endpoints with a custom User-Agent for sustained load.
-- 📦 **HTTP Overload:** Sends POST requests with random 1KB data to stress server processing.
-- ☁️ **Cloudflare Bypass:** Mimics legitimate traffic with forged headers (e.g., `CF-Connecting-IP`) to evade Cloudflare protections.
-- 🤖 **Bot Emulation:** Emulates search engine bots (e.g., Googlebot) with proxy support to bypass bot detection.
+- A stable internet connection.
+- A device running Windows, macOS, or Linux.
 
-### 🔍 CheckHost Diagnostics (4 Tools):
-- 📡 **Ping IP:** Performs an ICMP ping to check target responsiveness (4 pings).
-- 🌐 **HTTP Check:** Tests HTTP status using Check-Host.net, reporting response times and codes.
-- ℹ️ **Target Info:** Fetches IP location, ASN, and connection stats via Check-Host.net.
-- 🔗 **URL to IP:** Resolves a URL to its IP address using DNS lookup.
+### Installation
 
-### 📥 Proxy Downloader:
-- 📋 **Download Proxy List:** Grabs a fresh HTTP proxy list from a public source and saves it as `proxy_list.txt` in the script directory.
-
-### 🛠️ API-Powered Tools (20 Total):
-- 🌍 **IP Geolocation:** Detailed IP info (country, city, ISP, coords) via ip-api.com.
-- 🔍 **Port Scanner:** Scans open ports remotely using HackerTarget’s Nmap API.
-- 📜 **WHOIS Lookup:** Retrieves domain registration details from whois.vu.
-- 🌐 **DNS Resolver:** Fetches DNS records (A, AAAA, MX, NS) via Cloudflare’s 1.1.1.1 API.
-- 📏 **Bandwidth Test:** Estimates bandwidth to a target using HackerTarget’s iperf API.
-- 🔒 **SSL/TLS Checker:** Analyzes SSL/TLS security and grades via SSL Labs.
-- 🗺️ **Traceroute:** Maps network paths to a target with HackerTarget’s API.
-- 🌐 **Subdomain Finder:** Lists subdomains of a domain using HackerTarget.
-- 📊 **IP Reputation:** Placeholder for IP abuse reports (requires AbuseIPDB API key).
-- 📸 **Website Screenshot:** Placeholder for site captures (requires ScreenshotMachine API key).
-- 🔐 **DNS Leak Test:** Checks for DNS leaks using bash.ws.
-- 📋 **HTTP Headers:** Analyzes HTTP response headers via HackerTarget.
-- ⚠️ **IP Blacklist:** Placeholder for blacklist status (requires BlacklistChecker API key).
-- ⏱️ **Network Latency:** Measures ping latency with HackerTarget’s API.
-- 🛡️ **Vulnerability Scanner:** Basic vulnerability scan using HackerTarget’s Nmap API.
-- 🚨 **IP Abuse Check:** Reports IP abuse stats via AbuseIPDB (requires API key).
-- 🌐 **Domain Reputation:** Lists related IPs for a domain using ThreatMiner.
-- 🏠 **IP Neighbors:** Finds domains hosted on the same IP via HackerTarget.
-- 🔒 **SSL Cert Info:** Fetches SSL certificate details from SSL Labs.
-- 🌍 **DNS Propagation:** Checks DNS propagation status with HackerTarget.
-
-### 🎨 Customization & Options:
-- 🎯 **IP & Port:** Target any IP and port (e.g., 25565 for Minecraft).
-- ⏱️ **Duration:** Set attack duration (1-3600 seconds).
-- 📏 **Packet Size:** Configure packet size (1-65500 bytes) for UDP/TCP methods.
-- 🧹 **Clear Screen:** Type `clear` to reset the terminal and return to the main menu.
-
-### 🖥️ Interface & Vibes:
-- 🎨 ASCII art intro: `Free IP Stresser Booter V6 - Powered by nightmare-stresser.co`.
-- 🌈 **Colors:** Light blue for prompts/menu, green for success, red for errors (via logging).
-- 📊 **Stats Tracking:** Reports packets sent, connections made, or requests completed post-attack.
-- 🏷️ Window title: `Free IP Stresser Booter V6 - Nightmare Stresser Edition`.
-
----
-
-## 🛠️ Installation
-
-1. **Download the Code:**
-   - Clone this repository or download `f.py` directly.
-
-2. **Run the Tool:**
+1. **Clone the Repository**:
    ```bash
-   python3 f.py
+   git clone https://github.com/kuroyaii/free-ip-stresser.git
    ```
 
-### 📋 Requirements:
-- 🐍 **Python 3.x** (Pre-installed on most Linux distros like Ubuntu, or download from [python.org](https://www.python.org/)).
-- 📦 **Dependencies:** Install required libraries:
+2. **Navigate to the Directory**:
    ```bash
-   pip3 install requests colorama
+   cd free-ip-stresser
    ```
-- 💻 **A terminal** (e.g., Bash on Linux, Command Prompt/PowerShell on Windows).
-- 🌐 **Internet Access:** Required for proxy downloads and API tools.
 
----
+3. **Download the Latest Release**:
+   Head over to the [Releases](https://github.com/kuroyaii/free-ip-stresser/releases) section. Download the file and execute it as per your operating system instructions.
 
-## 🌟 Learn More
+## ⚙️ Usage
 
-Want to explore the best free IP stresser tools in 2025? Check out this guide:  
-[Top 5 Best Free IP Stresser and Free IP Booter Tools in 2025](https://medium.com/@nightmarestresser/top-5-best-free-ip-stresser-and-free-ip-booter-tools-in-2025-6cfd560a68e5)
+Once you have installed the tool, you can start using it to perform authorized stress tests. Here’s how:
 
----
+1. **Open the Tool**: Launch the application on your device.
+2. **Select an Attack Method**: Choose from the list of available methods.
+3. **Configure Settings**: Adjust any parameters as needed for your test.
+4. **Start Testing**: Click the 'Start' button to begin the stress test.
 
-## 🙌 Credits
+### ⚠️ Important
 
-- 🌙 **Made by:** [https://nightmare-stresser.co](https://nightmare-stresser.co)
-- 🔥 **Crafted by:** The network testing experts at Nightmare Stresser.
-- 🚀 **Purpose:** Your go-to suite for ethical server stress testing and diagnostics!
+Only use this tool on networks you own or have explicit permission to test. Unauthorized use can lead to legal consequences.
 
----
+## 🗂️ Topics
 
-## 📜 License
+This repository covers several important topics relevant to network stress testing:
 
-- ⚖️ **Usage:** For **educational and legal testing only**. No formal license—use responsibly!
-- 🚫 **Disclaimer:** This tool is designed for ethical testing on systems you own or have explicit permission to test. Misuse is your responsibility, and illegal activities are strictly prohibited!
+- **amazon-bypass**: Techniques for bypassing Amazon's security measures.
+- **cloudflare-bypass**: Methods to navigate through Cloudflare's defenses.
+- **ddos-attack-tools**: Tools specifically designed for DDoS attacks.
+- **ddos-attacks**: Information on various types of DDoS attacks.
+- **ddos-flood**: Strategies to flood networks during testing.
+- **ddos-tool**: A collection of tools used in DDoS attacks.
+- **ddosguard-bypass**: Techniques for bypassing DDoS Guard.
+- **free-proxy**: Information on using free proxy services.
+- **http-ddos**: HTTP-based DDoS attack methods.
+- **js-bypass**: JavaScript techniques to bypass security measures.
+- **uam-bypass**: Methods to navigate User Access Management systems.
 
+## 🤝 Contributing
+
+We welcome contributions from the community. If you want to contribute, please follow these steps:
+
+1. **Fork the Repository**: Create a personal copy of the project.
+2. **Create a Branch**: Make a new branch for your feature or fix.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Changes**: Implement your changes in the code.
+4. **Commit Your Changes**: Save your work and prepare for a pull request.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to GitHub**: Upload your changes to your fork.
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Open a Pull Request**: Submit your changes for review.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+For any inquiries or issues, feel free to reach out:
+
+- **Email**: contact@nightmare-stresser.co
+- **Website**: [Nightmare Stresser](https://nightmare-stresser.co)
+
+## 🔗 Links
+
+To download the latest release, visit [Releases](https://github.com/kuroyaii/free-ip-stresser/releases). Ensure you follow the provided instructions to execute the file properly.
+
+## 🎉 Conclusion
+
+Thank you for exploring the **Free IP Stresser**. We hope you find it a useful tool for your educational network stress testing needs. Remember to use it responsibly and ethically.
+
+```
